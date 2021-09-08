@@ -95,6 +95,7 @@ var ignoredHeaders = rules{
 			authorizationHeader: struct{}{},
 			"User-Agent":        struct{}{},
 			"X-Amzn-Trace-Id":   struct{}{},
+			"X-Amz-Acl":         struct{}{},
 		},
 	},
 }
@@ -115,7 +116,6 @@ var requiredSignedHeaders = rules{
 			"If-None-Match":                         struct{}{},
 			"If-Unmodified-Since":                   struct{}{},
 			"Range":                                 struct{}{},
-			"X-Amz-Acl":                             struct{}{},
 			"X-Amz-Copy-Source":                     struct{}{},
 			"X-Amz-Copy-Source-If-Match":            struct{}{},
 			"X-Amz-Copy-Source-If-Modified-Since":   struct{}{},
